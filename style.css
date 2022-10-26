@@ -1,0 +1,145 @@
+:root {
+  --dark: #222831;
+  --lightgray: #393E46;
+  --teal: #00ADB5;
+  --light: #EEEEEE;
+  --white: #fefefe;
+  --lewagon: #E60E05;
+
+}
+html {
+  overflow-x: hidden;
+}
+body{
+  background-color: var(--light);
+  margin: 0;
+  padding: 0;
+  font-family: Helvetica, sans-serif;
+}
+
+section {
+  padding: 1rem 0;
+}
+
+h1 {
+  color: var(--dark);
+}
+
+h2 {
+  color: var(--lightgray);
+}
+
+p {
+  color: var(--dark);
+}
+
+a {
+  color: var(--teal);
+  text-decoration: none;
+}
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+li {
+  list-style: none;
+  display: inline;
+  margin: 0 0.25rem;
+}
+.social {
+  text-decoration: none;
+  color: var(--teal);
+  display: inline-block;
+}
+
+.social:hover {
+  color: var(--teal);
+  padding: 0;
+  margin: 0;
+  text-shadow: 0px 0px 6px rgba(0, 0, 0, 0.3);
+  transition: 0.5s;
+  display: inline-block;
+
+}
+
+.lw-button {
+  text-decoration: none;
+  padding: 0.5rem;
+  border-radius: 5px;
+  background-color: var(--lewagon);
+  color: var(--white);
+  margin: 0 2rem;
+}
+
+.lw-button:hover {
+  background-color: var(--white);
+  color: var(--lewagon);
+  border: 1px solid var(--lewagon);
+  box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.3);
+  transition: 0.5s;
+}
+.button {
+  text-decoration: none;
+  padding: 0.5rem;
+  border-radius: 5px;
+  background-color: var(--teal);
+  color: var(--white);
+  margin: 0 2rem;
+}
+
+.button:hover {
+  background-color: var(--white);
+  color: var(--teal);
+  border: 1px solid var(--teal);
+  box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.3);
+  transition: 0.5s;
+}
+.card {
+  margin: 0 auto;
+  padding: 2rem;
+  width: 500px;
+  background-color: var(--white);
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+  text-align: center;
+  animation: fadeIn 2s;
+  opacity: 1;
+}
+@media (max-width: 540px) {
+  section:first-of-type {
+    padding: 0;
+  }
+  .card {
+    margin: 0 auto;
+    padding: 2rem 0.25rem;
+    background-color: var(--white);
+    border-radius: 0;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+    text-align: center;
+    animation: fadeIn 2s;
+    opacity: 1;
+  }
+}
+
+.profile-img {
+ max-width: 8rem;
+ border-radius: 50%;
+}
+
+.inter {
+  font-size: 3rem;
+  letter-spacing: 1rem;
+}
+
+.flip-bus {
+  transform: matrix(-1, 0, 0, 1, 0, 0);
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+ 	opacity: 1;
+  }
+}
